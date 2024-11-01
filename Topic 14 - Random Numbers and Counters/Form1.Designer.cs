@@ -33,6 +33,7 @@
             this.lblRandomCounter = new System.Windows.Forms.Label();
             this.lblLargestNum = new System.Windows.Forms.Label();
             this.lblSmallestNum = new System.Windows.Forms.Label();
+            this.btnRestart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRandomize
@@ -86,11 +87,25 @@
             this.lblSmallestNum.TabIndex = 4;
             this.lblSmallestNum.Text = "Smallest Number:";
             // 
+            // btnRestart
+            // 
+            this.btnRestart.BackColor = System.Drawing.Color.Black;
+            this.btnRestart.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestart.ForeColor = System.Drawing.Color.White;
+            this.btnRestart.Location = new System.Drawing.Point(116, 46);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(204, 55);
+            this.btnRestart.TabIndex = 5;
+            this.btnRestart.Text = "Restart";
+            this.btnRestart.UseVisualStyleBackColor = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
             // FormRandomCounter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblSmallestNum);
             this.Controls.Add(this.lblLargestNum);
             this.Controls.Add(this.lblRandomCounter);
@@ -111,6 +126,7 @@
         private System.Windows.Forms.Label lblRandomCounter;
         private System.Windows.Forms.Label lblLargestNum;
         private System.Windows.Forms.Label lblSmallestNum;
+        private System.Windows.Forms.Button btnRestart;
     }
 }
 

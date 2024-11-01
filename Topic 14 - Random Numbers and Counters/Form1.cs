@@ -12,8 +12,20 @@ namespace Topic_14___Random_Numbers_and_Counters
 {
     public partial class FormRandomCounter : Form
     {   
+        //WR: 50
         Random generator = new Random();
         int counter, randNum, numSmallest, numLargest;
+
+        private void btnRestart_Click(object sender, EventArgs e)
+        {
+            counter = 0;
+            lblRandomCounter.Text = counter + " Random Numbers made";
+            lblLargestNum.Text = "Largest Number:";
+            numLargest = 0;
+            lblSmallestNum.Text = "Smallest Number:";
+            numSmallest = 1000;
+        }
+
         public FormRandomCounter()
         {
             InitializeComponent();
